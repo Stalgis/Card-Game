@@ -1,0 +1,43 @@
+.item.start.dado-vuelta {
+    background-color: maroon;
+    width: 4rem;
+    padding: 3rem 1rem;
+    list-style: none;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+.item.start {
+    color: transparent;
+    background-color: brown;
+    width: 4rem;
+    padding: 3rem 1rem;
+    list-style: none;
+    border-radius: 20%;
+    /* Define la perspectiva para las animaciones 3D */
+    perspective: 1000px;
+    /* Define el punto de origen de la rotación */
+    transform-style: preserve-3d;
+    /* Define una transición para el giro */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+    justify-items: center;
+}
+
+body{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titles{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: larger;
+}
